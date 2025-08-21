@@ -1,0 +1,44 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+	border: 0 solid light-dark(var(--dark),var(--light));
+	font-family: 'Google Sans Code', monospace;
+}
+
+::selection {
+	background-color: light-dark(var(--dark),var(--light));
+	color: light-dark(var(--light),var(--dark));
+}
+
+.body {
+	background-color: light-dark(var(--light),var(--dark));
+	color: light-dark(var(--dark),var(--light));
+	font-size: 12px;
+	line-height: 1.5;
+    margin: 0 auto;
+	max-width: 800px;
+	padding: 0 10px;
+}
+
+.link {
+	color: inherit;
+	&:focus, &:hover {
+		background-color: light-dark(#222222, #fafafa);
+		color: light-dark(#fafafa, #222222);
+		outline: none;
+		text-decoration: none;
+	}
+}
+
+.list-reset {
+	list-style: none; 
+	margin: 0;
+	padding: 0;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.first-column {
+	min-width: 100px;
+}
